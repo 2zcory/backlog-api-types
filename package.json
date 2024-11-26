@@ -1,0 +1,16 @@
+{
+  "name": "@iztypes/backlog-api",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "izyroc",
+  "license": "ISC",
+  "description": "",
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts",
+    "types"
+  ]
+}
