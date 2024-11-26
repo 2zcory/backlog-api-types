@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "",
   "scripts": {
-    "preversion": "npm run build",
+    "preversion": "",
     "postversion": "npm publish && git push && git push --tags"
 
   },
