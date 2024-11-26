@@ -10,3 +10,5 @@
 /// <reference path="types/backlog.milestone.d.ts" />
 /// <reference path="types/backlog.attachment.d.ts" />
 /// <reference path="types/backlog.issue-type.d.ts" />
+
+/// <reference path="types/google-apps-script.d.ts" />
