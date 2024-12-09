@@ -35,7 +35,7 @@ declare namespace NSBacklog {
       /**
        * Assignee ID : assigneeId[](Multiple)
        */
-      'assigneeId[]'?: number[];
+      "assigneeId[]"?: number[];
       /**
        * True to make include Issue with Attachment : attachment
        */
@@ -43,7 +43,7 @@ declare namespace NSBacklog {
       /**
        * Category ID : categoryId[](Multiple)
        */
-      'categoryId[]'?: number[];
+      "categoryId[]"?: number[];
       /**
        * number of records to retrieve(1-100) default=20 : count
        */
@@ -59,7 +59,7 @@ declare namespace NSBacklog {
       /**
        * Created User ID : createdUserId[](Multiple)
        */
-      'createdUserId[]'?: number[];
+      "createdUserId[]"?: number[];
       /**
        * Due Date since (yyyy-MM-dd) : dueDateSince
        */
@@ -71,11 +71,11 @@ declare namespace NSBacklog {
       /**
        * Issue ID : id[](Multiple)
        */
-      'id[]'?: number[];
+      "id[]"?: number[];
       /**
        * Issue Type ID : issueTypeId[](Multiple)
        */
-      'issueTypeId[]'?: number[];
+      "issueTypeId[]"?: number[];
       /**
        * Keyword : keyword
        */
@@ -83,7 +83,7 @@ declare namespace NSBacklog {
       /**
        * Milestone ID : milestoneId[](Multiple)
        */
-      'milestoneId[]'?: number[];
+      "milestoneId[]"?: number[];
       /**
        * : offset
        */
@@ -100,19 +100,19 @@ declare namespace NSBacklog {
       /**
        * Parent Issue ID : parentIssueId[](Multiple)
        */
-      'parentIssueId[]'?: number[];
+      "parentIssueId[]"?: number[];
       /**
        * Priority ID : priorityId[](Multiple)
        */
-      'priorityId[]'?: number[];
+      "priorityId[]"?: number[];
       /**
        * Project ID : projectId[](Multiple)
        */
-      'projectId[]'?: number[];
+      "projectId[]"?: number[];
       /**
        * Resolution ID : resolutionId[](Multiple)
        */
-      'resolutionId[]'?: number[];
+      "resolutionId[]"?: number[];
       /**
        * True to make include Issue with File : sharedFile
        */
@@ -134,7 +134,7 @@ declare namespace NSBacklog {
       /**
        * Status IDAPI of status list for each project : statusId[](Multiple)
        */
-      'statusId[]'?: number[];
+      "statusId[]"?: number[];
       /**
        * Updated since (yyyy-MM-dd) : updatedSince
        */
@@ -146,7 +146,7 @@ declare namespace NSBacklog {
       /**
        * Version ID : versionId[](Multiple)
        */
-      'versionId[]'?: number[];
+      "versionId[]"?: number[];
     }
   }
 
@@ -180,6 +180,22 @@ declare namespace NSBacklog {
     interface Issue extends GoogleAppsScript.URL_Fetch.Payload {
       summary?: string;
       actualHours?: number;
+      statusId?: number;
+      parentIssueId?: number;
+      description?: string;
+      resolutionId?: number;
+      startDate?: string;
+      dueDate?: string;
+      estimatedHours?: number;
+      issueTypeId?: number;
+      categoryId?: number[];
+      versionId?: number[];
+      milestoneId?: number[];
+      priorityId?: number;
+      assigneeId?: number;
+      notifiedUserId?: number[];
+      attachmentId?: number[];
+      comment?: string;
     }
   }
 }

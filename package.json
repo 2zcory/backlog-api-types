@@ -13,5 +13,8 @@
   "files": [
     "index.d.ts",
     "types"
-  ]
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
 }
