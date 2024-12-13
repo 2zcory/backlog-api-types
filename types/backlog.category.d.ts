@@ -5,4 +5,10 @@ declare namespace NSBacklog {
     name: string;
     projectId: number;
   }
+
+  namespace PostPayload {
+    interface Category extends GoogleAppsScript.URL_Fetch.Payload {
+      name: string;
+    }
+  }
 }
