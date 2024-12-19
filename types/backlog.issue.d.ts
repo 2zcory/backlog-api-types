@@ -1,7 +1,7 @@
 declare namespace NSBacklog {
   interface Issue {
     actualHours: number | null;
-    assignee: User;
+    assignee?: User;
     attachments: Attachment[];
     category: Category[];
     created: string;
